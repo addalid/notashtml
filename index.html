@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desarrollo web</title>
+    <style>
+        
+        h1{
+            color:rgb(21, 194, 79);
+           font-family: sans-serif;
+         }
+        h2{
+            color: rgb(211, 168, 26);
+            border-style: groove;
+        }
+        h3{
+            background-color: brown;
+        }
+
+        h4{ color:mediumvioletred
+        }
+        p{
+            font-family: cursive;
+            font-size: 20px;
+            font-weight: 30px;
+            color:blue;
+        }
+        #cancion{
+            background-color: rgb(255, 196, 230);
+        }
+        #tabla{
+            color: brown;
+            background-color: blanchedalmond;
+            
+        }
+        #section{
+            margin: 10px;
+        }
+        .p-red{
+            color: red;
+        }
+        .p-red{
+            color: violeta;
+        }
+        #codigo{
+            width: 40%;
+            padding: 30px;
+            margin: 20px;
+            border-width: 20px;
+            border-style: ridge;
+            border-color: brown;
+            border-radius: 20px;
+        }
+        .marco{
+            width: 40%;
+            padding: 30px;
+            margin: 20px;
+            border-width: 20px;
+            border-style: dashed; 
+            border-color: rgb(77, 165, 42);
+            border-radius: 20px;
+        }
+        .cambio{
+            width: 30%;
+            margin: 2px;
+        }
+    #border{
+            box-shadow: 8px 10px 5px 15px cornflowerblue;
+
+        }
+    </style>
+</head>
+<img src="https://gobierno.cdmx.gob.mx/wp-content/uploads/2022/03/EscuelaCodigoNota-1070x250.jpg"> </img>
+<body>
+    <main>
+        <section>
+            <h1>Desarrollo Web</h1>
+            <h1 style ="color:blueviolet;">
+            <p>
+                Este curso forma parte del programa de Escuelas de Código de la Ciudad de México, tiene como finalidad
+                introducir las herramientas necesarias para comenzar en el desarrollo web. Al finalizar los alumnos
+                tendrán un panorama general de lo que es el desarrollo web, cómo funciona la web, las tecnologías
+                usadas, y serán capaces de construir una página web estática desde cero usando los lenguajes HTML y CSS,
+                para ello a lo largo del curso se realizarán diversos ejemplos desarrollando cada uno de los temas, al
+                finalizar cada uno de ellos se presentarán ejercicios practicas donde los estudiantes implementaran los
+                conocimiento adquiridos.
+            </p>
+            <h2>Un poco de historia</h2>
+            <p>
+                El nacimiento de la web se da el 23 de agosto de 1991 en el CERN (Conseil Européen pour la Recherche
+                Nucléaire) HTML, siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web. 
+                Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, 
+                como texto, imágenes, videos, juegos, entre otros. Es un estándar a cargo del World Wide Web Consortium, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, 
+                sobre todo en lo referente a su escritura e interpretación. HTML se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la World Wide Web (WWW). 
+                Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado.
+                Para 1993 había 600 sitios, para 1995 la cifra aumentó hasta los 15.000. Hoy, la WWW se ha convertido en
+                el servicio más valorado de Internet. A partir de 2008, había 1500 millones de usuarios de Internet en
+                todo el mundo, 1300 millones de usuarios de correo electrónico, 210 mil millones de correos electrónicos
+                enviados diariamente, 186,7 millones de sitios web y 133 millones de blogs.
+            <img src="https://es.wikipedia.org/wiki/HTML#/media/Archivo:HTML_logo.png"><img></p>
+        </section>
+        <section>
+            <h2>El lenguaje de la web: HTML</h2>
+            <p class="violeta">
+                El lenguaje HTML basa su filosofía de desarrollo en la diferenciación. Para añadir un elemento externo a la página (imagen, vídeo, script, entre otros.), este no se incrusta directamente en el código de la página, sino que se hace una referencia a la ubicación de dicho elemento mediante texto. 
+                De este modo, la página web contiene solamente texto mientras que recae en el navegador web (interpretador del código) la tarea de unir todos los elementos y visualizar la página final. Al ser un estándar, HTML busca ser un lenguaje que permita que cualquier página web escrita en una determinada versión, 
+                pueda ser interpretada de la misma forma (estándar) por cualquier navegador web actualizado.HTML es un lenguaje de marcado que nos permite indicar la estructura de nuestro documento mediante etiquetas. Este lenguaje nos ofrece una gran adaptabilidad, una estructuración lógica y es fácil de interpre­tar tanto por humanos como por máquinas.
+                Sin embargo, a lo largo de sus diferentes versiones, se han incorporado y suprimido diversas características, con el fin de hacerlo más eficiente y facilitar el desarrollo de páginas web compatibles con distintos navegadores y plataformas (PC de escritorio, portátiles, teléfonos inteligentes, tabletas, etc.) 
+                No obstante, para interpretar correctamente una nueva versión de HTML, los desarrolladores de navegadores web deben incorporar estos cambios y el usuario debe ser capaz de usar la nueva versión del navegador con los cambios incorporados. Normalmente los cambios son aplicados mediante parches de actualización automática (Firefox, Chrome) u ofreciendo una nueva versión del navegador con todos los cambios incorporados, 
+                en un sitio web de descarga oficial (Internet Explorer). Por lo que un navegador desactualizado no será capaz de interpretar correctamente una página web escrita en una versión de HTML superior a la que pueda interpretar, lo que obliga muchas veces a los desarrolladores a aplicar técnicas y cambios que permitan corregir problemas de visualización e incluso de interpretación de código HTML. 
+                Así mismo, las páginas escritas en una versión anterior de HTML deberían ser actualizadas o reescritas, lo que no siempre se cumple. Es por ello que ciertos navegadores todavía mantienen la capacidad de interpretar páginas web de versiones HTML anteriores. Por estas razones, todavía existen diferencias entre distintos navegadores y versiones al interpretar una misma página web.</p>
+            <h3>Sintaxis HTML</h3>
+            <p> La sintaxis de un lenguaje es el "conjunto de reglas que definen las secuencias correctas de los elementos de un lenguaje de programación" (diccionario RAE). 
+                Aunque el HTML no es un lenguaje de programación, sino un lenguaje de marcas, en el HTML también existen una serie de reglas para que los documentos sean correctos. 
+                En general, la sintaxis del HTML está inspirada en la norma SGML (aunque no la cumple estrictamente).Si un documento contiene errores de sintaxis se dice que es un documento inválido. 
+                Aunque un documento HTML no sea sintácticamente correcto, los navegadores intentan mostrar el documento de la mejor manera posible. Aunque los navegadores a menudo consiguen mostrar correctamente documentos inválidos, 
+                se aconseja validar y corregir los documentos para asegurar que los navegadores puedan mostrarlos correctamente.</p>
+                <h3> Anatomia de una Etiqueta HTLM</h3>
+                
+                <h4> GENRALIDADES</h4>
+                <p> El carácter menor <(menor que)  sólo se puede utilizar  para indicar el comienzo de una etiqueta, Si se quiere mostrar el carácter <, se debe escribir  la entidad de carácter "&lt";</p><p> 2 &lt; 5 </p>
+            <p> Los nombres de los elementos , los nombres de los atributos  y los valores se suelen escribir en minúsculas, aunque  se pueden escribir en mayúsculas.</p>
+               <p> class="escuela de código"></p> <p> CLASS= "ESCUELA DE CÓDIGO"></p>
+            <p> las entidades numéricas expresadas en hexadecimal se pueden escribir en minúsculas o mayúsuculas</p>
+            <P> "&#x3b1, &#x3b2, &#x3c0" </P>
+            <p> &#X3B1, &#X3B2, &#X3CO</p>
+            
+            <h5> ELEMENTOS (etiquetas)</h5>
+            <p> El nombre del elemento debe ir a continuación del caracter < (sin espacios)</p>
+            <p> El nombre del elemento en la etiqueta de cierre tiene que coincidir  con el nombre de la etiqueta de apertura</p>
+           <p> Todos los elementos tienen que estar completamente contenidos en otros elementos (no se pueden cruzar las lineas)</p> 
+           <p> Los elementos no vacios (los que pueden contener texto), suelen tener etiquetas de cierre, aunque la norma define algunas circunstancias en las que se pueden omitir las etiquetas de cierre</p>
+           
+           <h5> ATRIBUTOS</h5>
+           <P> Los atributos sólo pueden aparecer en la etiqueta de apertura</P>
+           <p> Un atributo sólo puede aparecer una vez en cada etiqueta de apertura o en cada etiqueta vacía (es decir, en una etiqueta los atributos no pueden repetirse).</p>
+           <p>Los valores de los atributos se suelen escribir entre comillas (dobles o simples), pero no es necesario si el valor no contiene espacios en blanco.</p>
+           <p> Los espacios en blanco iniciales y finales en los valores de los atributos no se tienen en cuenta. En los valores de los atributos, los saltos de línea o si hay varios espacios en blanco seguidos se consideran como un único espacio en blanco.</p>
+        
+                <h5>Etiqueta para agregar una imagen</h5>
+            <p> Para poner una imagen simple en una página web, utilizamos el elemento img . 
+                Se trata de un elemento vacío (lo que significa que no contiene texto o etiqueta de cierre) que requiere de por lo menos de un atributo para ser utilizado: src (a veces denominado por su nombre completo, source)
+                &lt; img src="https:/camino_hacia el archivo_.jpg"> &gt;</p>
+
+            <h4>Atributos</h4>
+            <p>Los atributos de HTML son palabras especiales utilizadas dentro de la etiqueta de apertura, para controlar el comportamiento del elemento.
+            Los atributos de HTML son un modificador de un tipo de elemento de HTML. Un atributo tampoco modifica la funcionalidad por defecto de un tipo de elemento o proporciona funcionalidad a ciertos tipos de elementos incapaces de funcionar correctamente sin ellos.
+            En sintaxis HTML, un atributo se añade a una etiqueta de inicio de HTML.
+            Entonces, los ATRIBUTOS HTML, van siempre dentro de la etiqueta de apertura y sirven para modificar o agregar alguna caracteristica al contenido.</p>
+       <h4> "LISTA DE LOS ATRIBUTOS MAS USADOS EN HTML"</h4>
+        <p>1.- id:Para identificar un elemento único.
+        2.- class:Identificador múltiple.
+        3.- align:Alineación de contenido.
+        4.- border:Para darle borde al contenido.
+        5.- style:Para darle un estilo al contenido.
+        6.- background-color:Para color de fondo.
+        7.- href:Para enlaces html.
+        8.- height:Para determinar altura.
+        9.- width:Para determinar ancho.
+        10.-src:Para imágenes.</p>
+        
+        <h4>"Atributo: valores"</h4>
+          <p>Id.- su valor puede ser cualquier palabra que sirve para identificar un elemento.
+          align.- alineación, sus valores pueden ser: center, right, left, justify.
+          border-style.- estilo de borde, los valores disponibles son: solid, dotted, dashed, double, etc.
+          bgcolor.- Para color de fondo para ciertos elementos como body, el valor puede ser cualquier color en formato palabra, hexadecimal, RGB, etc. ejemplo: red, green, #ff0000, etc.
+          href .- para enlaces su valor puede ser la dirección de un carpeta o URL.
+          height .- para definir altura, su valor puede ser una medida con su unidad de medida, por ejemplo: 10px, 12em, 100%.
+          width.- define el ancho y su valor puede ser cualquier medida con su respectiva unidad de medida.</p>
+          <section>
+            Ejemplo de atributo align </section>
+            <p align="center">Este es un párrafo alineado al centro</p>
+            <p align="right">Este es un párrafo alineado a la derecha</p>
+            <p align="left">Este es un párrafo alineado a la izquierda</p>
+            <p> En resumen se puede decir que:</p>
+                Los atributos en HTML se caracterizan por estar dentro de la etiqueta de apertura
+                Los atributos HTML tienen un valor
+                El valor de los atributos va entre comillas (” ”)
+                El valor de un atributo HTML se especifica antecediendolo con un signo de igual (=)
+                Los atributos determinan estilos, identificadores, etc.</p>
+        
+        
+            <h2>Estructura básica documento html</h2>
+<section>Estructura básica de página Web en HTML
+    Para crear un verdadero documento HTML comenzará con tres elementos contenedores:
+html
+head
+body
+Estos tres se combinan para describir la estructura básica de la página:
+html: Este elemento envuelve todo el contenido de la página (excepto la DTD)
+head: Este elemento designa la parte de encabezado del documento. Puede incluir información opcional sobre la página Web, como puede ser el título (el navegador lo muestra en la barra de título), palabras clave de búsqueda opcionales y una hoja de estilo opcional.
+body: Este elemento alberga el contenido de su página Web, es decir, aquello que queremos que aparezca en el área de navegación del navegador..
+Sólo hay una manera correcta de combinar estos tres elementos. He aquí su colocación exacta, con el doctype al comienzo de la página:
+</section>
+<code>
+<pre id="codigo">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&lt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    
+    &lt;/body>&gt;
+    &lt;/html&gt;
+</pre>
+</code>
+
+            <ul class="p-red">
+
+                <li>
+                    &lt;!DOCTYPE html&gt;.- Indica la versión del tipo de documento html, en este caso indica que el
+                    documento esta escrito con la version html5, la cual es la versión más reciente y actualmente se
+                    recomienda escribir todas las páginas con esta versión.
+                </li>
+                <li class>
+                    &lt;/html&gt;.- Este elemento encierra todo el contenido de la página entera y, a veces, se le
+                    conoce como el
+                    elemento raíz (root element).
+                </li>
+
+                <li>
+                    &lt;head>&lt;/head&gt;.- Sirve para agregar los metadatos de la página, como palabras clave
+                    (keywords), una descripción de la página que quieres que aparezca en resultados de búsquedas, código
+                    CSS
+                    para dar estilo al contenido, etc.
+                </li>
+
+                <li>
+                    &lt;meta charset="utf-8"&gt; Este elemento la codificación de caracteres que tu documento usará en
+                    utf-8 (8-bit Unicode Transformation Format)
+                </li>
+                <li>
+                    &lt;title>&lt;/title&gt; Título de la página.
+                </li>
+
+                <li>
+                    &lt;body>&lt;/body&gt; Encierra todo el contenido visible de la página.
+                </li>
+
+            </ul>
+        </section>
+        <section>
+            <h2>Etiquetas de texto</h2>
+
+            <h3>Etiquetas de párrafo y encabezados HTML</h3>
+            <p>Las etiquetas que siempre indican texto y son:
+                p: Indica que el elemento es un párrafo.
+                h1: Señala que se trata de un titulo principal.
+                h2:, h3, h4, h5, h6: indica niveles de encabezado, subtítulos.
+                <p>Ejemplo de etiquetas de texto HTML</p>
+                <h1> Título de primer nivel</h1>
+                <h2> Título de segundo nivel</h2>
+                <h3> Título de tercer nivel</h3>
+                <h4> Título de cuarto nivel</h4> 
+                <p> elemento de parrafo en html</p>
+               <h3> Lista de formatos y etiquetas de texto HTML</h3>
+                <section>
+                    b: Para texto en negrita.
+                    em: Para enfatizar texto.
+                    i: Para texto en cursiva.
+                    u: Para texto subrayado.
+                    strong: Para textos importantes.
+                    big: Texto grande.
+                    small: Para texto pequeño.
+                    sub: Para texto subíndice.
+                    sup: Para texto superíndice.
+                    ins: Para texto insertado.
+                    del: Para texto borrado.
+                    mark: Para texto marcado. </section>
+               <h3>Diferencia entre: strong, b y em, i,</h3>
+               <p> Las etiquetas:strong y b se muestran visualmente iguales en los navegadores, 
+                y lo mismo ocurre con las etiquetas em y i, pero hay diferencias
+                b: define texto en negrita, sin ninguna importancia adicional.
+                strong: define texto fuerte, con importancia semántica aumentada.
+                i: define el texto en cursiva, sin ninguna importancia adicional.
+                em: define el texto enfatizado, con una importancia semántica aumentada.</p>
+                <p>Ejemplo de formatos de texto</p>
+               <strong> <p> párrafo importante con etiqueta html</p></strong> 
+               <b> <p> párrafo con estilo negrita etiqueta b</p></b>
+               <em> texto importante en cursiva con etiqueta em </p></em>
+               <i> texto con estilo cursiva con etiqueta i </p></i>
+               <p> es un simplre párrafo</p>
+               <big><p> este es otro párrafo y tendrá formato de texto grande</p></big>
+               <p> <mark> <i> <big> Este es el segundo párrafo y tendra formato de texto grande, será cursiva y también será marcado</big></i></mark></p>
+
+
+
+
+            <h3>Párrafo con preformato: &lt;pre&gt; </h3>
+
+            <p>Permite agregar texto en un parrafo con un formato establecido por el editor de texto, reconoce saltos de
+                linea y espacios multiples</p>
+            <p>Ejemplos.- </p>
+
+            <pre id="cancion">
+&lt;pre&gt;   
+Welcome to your life
+There's no turning back
+Even while we sleep
+We will find you
+Acting on your best behaviour
+Turn your back on mother nature
+Everybody wants to rule the world
+It's my own design
+It's my own remorse
+Help me to decide
+Help me make the most
+Of freedom and of pleasure
+Nothing ever lasts forever
+Everybody wants to rule the world
+There's a room where the light won't find you
+Holding hands while the walls come tumbling down
+When they do I'll be right behind you
+&lt;/pre&gt;
+            <p>Resultado</p>
+            <pre>
+                Welcome to your life
+                There's no turning back
+                Even while we sleep
+                We will find you
+                Acting on your best behaviour
+                Turn your back on mother nature
+                Everybody wants to rule the world
+                It's my own design
+                It's my own remorse
+                Help me to decide
+                Help me make the most
+                Of freedom and of pleasure
+                Nothing ever lasts forever
+                Everybody wants to rule the world
+                There's a room where the light won't find you
+                Holding hands while the walls come tumbling down
+                When they do I'll be right behind you
+
+</pre>
+            <h3>Texto con énfasis: &lt; em &gt;</h3>
+            <p>Marcar con énfasis las partes importantes de un texto</p>
+
+
+            <h3>Texto importante: &lt;strong&gt; </h3>
+            <p>Resalta con especial énfasis las partes más importantes de un texto.</p>
+
+
+            <p>Ejemplo.-</p>
+
+            <p>
+                &lt;p&gt;
+                &lt;em&gt;El dinero&lt;/em&gt;es importante pero &lt;strong&gt;la salud&lt;/strong&gt; lo es más.
+                &lt;/p&gt;
+            </p>
+
+            <p>Resultado</p>
+
+            <p> <em>El dinero</em> es importante pero <strong>la salud</strong> lo es más. </p>
+
+            <h3>Texto resaltado: &lt;mark&gt;</h3>
+            <p> Representa un texto marcado o resaltado como referencia o anotación</p>
+            <p>Ejemplo.-</p>
+            <p>
+                &lt;p&gt;
+                La mision DART de la nasa &lt;mark&gt; DART &lt;/mark&gt; se estrello intencionalmente contra un asteroide
+                en la primera prueba de defensa planetria de la humanidad.
+                El impacto ocurrio a las 7:14 p.m ET segun lo planeado y hubo vitores en el control de la mision de la nasa &lt;mark&gt; 7:14 p.m. &lt;/mark&gt; 
+                si bien el asteroide DIMORPHOS no corria el riesgo de impacatar con la tierra , esta demostracion podria determinar como desviar las rocas 
+                espaciales que podrian representar una amenaza para la tierra en el futuro</p>
+                &lt;/p&gt;
+
+            <p>Resultado</p>
+            <p> El telescopio espacial <mark> Hubble </mark> de la NASA ha sacado muchas imágenes asombrosas. Una de las
+                más memorables es el mosaico del perfil del Sombrero. Con su magnitud relativamente alta y a una
+                distancia de <mark> 28 millones de años luz </mark> de la Tierra, Messier 104, nombre formal de
+                Sombrero, se puede ver fácilmente por un telescopio. </p>
+
+            <h3> Texto de código </h3>
+
+            <p>Es el apropiado para marcar el código de un programa.</p>
+            <p>Ejemplo.-</p>
+
+
+            <pre>
+&lt;code&gt;
+    &lt;pre&gt;
+    h1{
+        background-color:blue;
+    }
+    &lt;/pre&gt;
+&lt;/code&gt;
+</pre>
+
+
+            <p>Resultado</p>
+            <code>
+<pre>
+h1{
+    background-color:blue;
+}
+</pre>
+</code>
+        </section>
+        <section id="section">
+            <h2>Etiquetas de listas</h2>
+            <h3>Listas ordenadas: &lt; ol &gt; ,&lt; li &gt;</h3>
+            <p>Estas etiquetas permiten agregar texto en formato de lista con una prioridad en el orden de aparición de
+                los elementos.</p>
+            <p>Ejemplo.-</p>
+            <code>
+<pre>
+    Equipos con más títulos de champions
+    &lt;ol&gt;
+        &lt;li>Real Madrid&lt;/li&gt;
+        &lt;li>Milan&lt;/li&gt;
+        &lt;li>Liverpool&lt;/li&gt;
+    &lt;/ol&gt;
+</pre>
+</code>
+            <p>Resultado</p>
+            <ol>
+                <li>Real Madrid</li>
+                <li>Milan</li>
+                <li>Liverpool</li>
+            </ol>
+
+            <h3>Listas desordenadas: &lt; ul &gt; ,&lt; li &gt;</h3>
+            <p>Estas etiquetas permiten agregar texto en formato de lista sin una prioridad en el orden de aparición de
+                los elementos.</p>
+            <p>Ejemplo.-</p>
+            <code>
+<pre>
+    &lt;ul&gt;
+        &lt;li>Manzanas&lt;/li&gt;
+        &lt;li>Peras&lt;/li&gt;
+        &lt;li>Sandias&lt;/li&gt;
+    &lt;/ul&gt;
+</pre>
+</code>
+            <p>Resultado</p>
+            <ul>
+                <li>Manzanas</li>
+                <li>Peras</li>
+                <li>Sandias</li>
+            </ul>
+
+
+
+        </section>
+        <section>
+            <h2>Tablas</h2>
+            <h3>Contenedor de la tabla: &lt; table &gt;</h3>
+            <p>Esta etiqueta encierra todo el contenido de una tabla</p>
+            <h3>Filas: &lt; tr &gt;</h3>
+            <p>Agrega una fila a la tabla</p>
+            <h3>Celdas de encabezado: &lt; th &gt;</h3>
+            <p>Esta etiqueta permite agregar celdas para los encabezados de columna o fila</p>
+            <h3>Datos: &lt; td &gt;</h3>
+            <p>Esta etiqueta permite agregar los diferentes datos dentro de la tabla, deben estar dentro de la etiqueta
+                &lt;tr &gt; </p>
+            <p>Ejemplo.-</p>
+            <table id="tabla">
+                <tr>
+                    <th>Pais</th>
+                    <th>Habitantes</th>
+                    <th>Territorio</th>
+                    <th>Idioma</th>
+                </tr>
+                <tr>
+                    <td>México</td>
+                    <td>198.9</td>
+                    <td></td>
+                    <td>Español</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                    <td>212.6</td>
+                    <td>8516</td>
+                    <td>Portugues</td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>38.01</td>
+                    <td>9985</td>
+                    <td>Ingles/Frances</td>
+                </tr>
+
+            </table>
+            <p>Es posible tambien crear celdas que ocupen más de una columna o más de una fila, para ello se usan los
+                atributos <em> colspan </em> y <em> rowspan</em>. Si se busca que una celda se expanda sobre varias
+                columnas se emplea colspan con el valor del numero de columnas que ocupara dicha celda, es decir si
+                buscamos se expanda 2 columnas se agregara el atributo colspan="2".El atributo <em>rowspan</em> se usa
+                de forma similar, se coloca en la celda que ocupara mas de una fila indicando en el valor el numero de
+                filas. </p>
+
+            <h3>Agrupación de elementos de tablas</h3>
+            <h4>Encabezado de tabla: &lt; thead &gt;</h4>
+            <p>Se emplea para agrupar los nombres de las columnas del encabezado de las tablas, util para dar estilos
+                con css.</p>
+            <h4>Cuerpo de la tabla: &lt; tbody &gt;</h4>
+            <p>Define el cuerpo de la tabla donde se encuentran los datos</p>
+            <h4>Pie de tabla: &lt; tfoot &gt; </h4>
+            <p>Utilizado para definir resumenes de los datos, como sumas promedio o totales.</p>
+            <p>Ejemplo.-</p>
+            <code>
+<pre>
+&lt;table &gt;
+    &lt;thead &gt;
+        &lt;tr&gt;
+            &lt;th rowspan="2"&gt;Denominación&lt;/th &gt;
+            &lt;th colspan="4"&gt;2021 &lt;/th &gt;  
+        &lt;/tr&gt;
+        &lt;tr&gt;                       
+            &lt;th&gt;1T&lt;/th &gt;
+            &lt;th&gt;2T&lt;/th &gt;
+            &lt;th&gt;3T&lt;/th &gt;
+            &lt;th&gt;4T &lt;/th &gt;
+        &lt;/tr &gt;
+    &lt;/thead &gt;
+    &lt;tbody &gt;
+        &lt;tr &gt;                       
+            &lt;th&gt;Actividades Primarias &lt;/th &gt;
+            &lt;td&gt;594,616 &lt;/td &gt;
+            &lt;td&gt;604,082 &lt;/td &gt;
+            &lt;td&gt;611,296 &lt;/td &gt;
+            &lt;td&gt;617,923 &lt;/td &gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;                        
+            &lt;th&gt;Actividades Secundarias&lt;/th &gt;
+            &lt;td&gt;5,065,926 &lt;/td&gt;
+            &lt;td&gt;5,099,962 &lt;/td&gt;
+            &lt;td&gt;5,112,189 &lt;/td&gt;
+            &lt;td&gt;5,151,507 &lt;/td&gt;
+        &lt;/tr &gt;
+        &lt;tr &gt;                        
+            &lt;th &gt;Actividades Terciarias&lt;/th &gt;
+            &lt;td&gt;11,339,930 &lt;/td&gt;
+            &lt;td&gt;11,449,416 &lt;/td&gt;
+            &lt;td&gt;11,320,953 &lt;/td&gt;
+            &lt;td&gt;11,288,555 &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody &gt;
+
+&lt;/table &gt;
+</pre>
+</code>
+            <p>Resultado</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Denominación</th>
+                        <th colspan="4">2021 </th>
+                    </tr>
+                    <tr>
+                        <th>1T</th>
+                        <th>2T</th>
+                        <th>3T</th>
+                        <th>4T </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Actividades Primarias </th>
+                        <td>594,616 </td>
+                        <td>604,082 </td>
+                        <td>611,296 </td>
+                        <td>617,923 </td>
+                    </tr>
+                    <tr>
+                        <th>Actividades Secundarias</th>
+                        <td>5,065,926 </td>
+                        <td>5,099,962 </td>
+                        <td>5,112,189 </td>
+                        <td>5,151,507 </td>
+                    </tr>
+                    <tr>
+                        <th>Actividades Terciarias</th>
+                        <td>11,339,930 </td>
+                        <td>11,449,416 </td>
+                        <td>11,320,953 </td>
+                        <td>11,288,555 </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Totales</th>
+                        <td>17,725,438</td>
+                        <td>17,893,268</td>
+                        <td>17,798,621</td>
+                        <td>17,853,898</td>
+                    </tr>
+                </tfoot>
+                <caption>Producto Interno Bruto Trimestral, cifras desestacionalizadas(Millones de pesos a precios de
+                    2013).</caption>
+            </table>
+
+            <p>La etiqueta &lt;caption&gt; permite agregar un título a la tabla, por default se mostrará al inicio de la
+                tabla, pero puede ser cambiado con estilos de CSS</p>
+        </section>
+
+        <section>
+            <h2>Etiquetas multimedia</h2>
+            <h3>Imágenes</h3>
+            <p>Permite agregar imágenes, debe incluir el atributo obligatorio <em>src</em> cuyo valor corresponde a la
+                ruta donde se encuentra la imágen. </p>
+            <p>Ejemplo.-</p>
+            <p>
+                &lt;img src="img/esme.webp" alt="cascada esmeralda, oaxaca"&gt;
+            </p>
+            <p>Resultado</p>
+            <img src="img/esme.webp" alt="cascada esmeralda, oaxaca">
+
+            <h3>Video</h3>
+            <p>Permite agregar video directamente desde el navegador, agregada  en la versión de HTML5</p>
+            <p>Ejemplo.-</p>
+            <p>
+                &lt;video src="video/big_buck_bunny.ogv" controls&gt; &lt;/video&gt;
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>src</code></td>
+                        <td><em>Dirección URL</em></td>
+                        <td>Video a reproducir. Obligatoria si actua como etiqueta contenedora.</td>
+                    </tr>
+                    <tr>
+                        <td><code>poster</code></td>
+                        <td>Dirección URL de la imagen</td>
+                        <td>Muestra una imagen a modo de presentación.</td>
+                    </tr>
+                    <tr>
+                        <td><code>autoplay</code></td>
+                        <td>
+                            Booleano
+                        </td>
+                        <td>Comienza a reproducir el video automáticamente.</td>
+                    </tr>
+                    <tr>
+                        <td><code>loop</code></td>
+                        <td>
+                            Booleano
+                        </td>
+                        <td>Vuelve a iniciar el video cuando finaliza su reproducción (bucle).</td>
+                    </tr>
+                    <tr>
+                        <td><code>muted</code></td>
+                        <td>
+                            Booleano
+                        </td>
+                        <td>Establece el video sin sonido (silenciado).</td>
+                    </tr>
+                    <tr>
+                        <td><code>controls</code></td>
+                        <td>
+                            Booleano
+                        </td>
+                        <td>Muestra los controles de reproducción. Por defecto no se muestran.</td>
+                    </tr>
+                    <tr>
+                        <td><code>width</code></td>
+                        <td><em>tamaño</em></td>
+                        <td>Indica el tamaño de ancho del video.</td>
+                    </tr>
+                    <tr>
+                        <td><code>height</code></td>
+                        <td><em>tamaño</em></td>
+                        <td>Indica el tamaño de alto del video.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>La etiqueta &lt;video&gt; también puede actuar como etiqueta contenedora e incluir varias etiquetas HTML para dotar de mayor compatibilidad, o capacidades adicionales.</p>
+            <h4>Video con alternativas: &lt;source &gt;</h4>
+            <p>Si utilizamos la etiqueta &lt;video&gt; como etiqueta contenedora, podemos incluir etiquetas &lt;source &gt;  en su interior para proporcionar formatos alternativos y tener mayor compatibilidad con otros navegadores y navegadores antiguos que no soporten HTML5:</p>
+
+            <p>Ejemplo</p>
+<pre>
+<code>
+    &lt;video controls&gt;
+        &lt;source src="video/big_buck_bunny.webm" type="video/webm"&gt;
+        &lt;source src="video/big_buck_bunny.ogv" type="video/ogg"&gt;
+        &lt;source src="video/big_buck_bunny.mp4" type="video/mp4"&gt;
+        &lt;img src="imagen.png" alt="Video no soportado" /&gt;
+        Lo lamento; su navegador no soporta video HTML5.
+    &lt;/video&gt;
+</code>
+</pre>
+            <video controls>
+                <source src="video/big_buck_bunny.webm" type="video/webm">
+                <source src="video/big_buck_bunny.ogv" type="video/ogg">
+                <source src="video/big_buck_bunny.mp4" type="video/mp4">
+                <img src="imagen.png" alt="Video no soportado" />
+                Lo lamento; su navegador no soporta video HTML5.
+            </video>
+        </section>
+    </main>
+    <form>
+        <input type ="search">
+       <label for ="nombre"> escribe tu nombre</label>
+       <input type ="email" id ="correo"
+       label for ="email"> checa tu email </label>
+       <textarea name ="" id ="" cols ="1" rows="1"></textarea>   
+    <input type ="telefono"> escribe numero telefonico </label>
+    <label for ="numero telefonico" id ="telefono"></label>
+      <input type="radio"name ="opciones" id = "A">
+    <label for = "A"> A</label>
+        <input type="radio" name="opciones" id="B">
+        <label for="B"> B </label>
+
+
+
+
+
+    
+    
+    
+      
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    </form>
+
+
+    
+
+</body>
+
+</html>
